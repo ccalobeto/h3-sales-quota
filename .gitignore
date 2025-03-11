@@ -21,3 +21,8 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# project data
+/static/data/input
+/static/data/output/output.*
+/scripts/notebooks
