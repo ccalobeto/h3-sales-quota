@@ -28,3 +28,4 @@ vite.config.ts.timestamp-*
 /static/data/input
 /static/data/output/output.*
 /scripts/notebooks
+blog.txt
