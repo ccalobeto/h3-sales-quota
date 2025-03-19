@@ -1,0 +1,114 @@
+{
+  "title": "Perfil de las personas desaparecidas en el Ecuador",
+  "description": "Explorando los datos abiertos a través de potentes visualizaciones para encontrar el perfil de las personas desaparecidas en el Ecuador.",
+  "url": "https://github.com/ccalobeto/missed-ec",
+  "keywords": "Ecuador, crime, missing people, human rights",
+  "byline": "Elaborado por <a href=https://www.carlosleon.dev target=_blank>Carlos León</a>",
+  "footer": "Un gráfico hecho en <b>svelte </b> y <b>d3.js</b>. <span class=links> <a href=https://www.carlosleon.dev/blog/missed-in-ec target=_blank>Blog post</a> | <a href=https://github.com/ccalobeto/missed-ec target=_blank>GitHub</a> </span>.",
+  "body": [
+    {
+      "type": "text",
+      "value": "En Ecuador, el tema de las personas desaparecidas ha atraído una atención significativa debido a un número preocupante de desapariciones. "
+    },
+    {
+      "type": "text",
+      "value": "El Ministerio del Interior ha publicado informes anuales para arrojar luz sobre las cifras de desapariciones registradas, con el objetivo de dar visibilidad a este problema apremiante."
+    },
+    {
+      "type": "text",
+      "value": "Los esfuerzos para localizar a las personas desaparecidas han sido apoyados por avances en tecnología y ciencia forense. Además, se han desarrollado sistemas de geolocalización gubernamental para ayudar en la ubicación rápida de las personas desaparecidas, especialmente en áreas remotas."
+    },
+    {
+      "type": "text",
+      "value": "Estas iniciativas, combinadas con una mayor conciencia pública y la disposición de la información en la <a href=https://www.datosabiertos.gob.ec/dataset/personas-desaparecidas> plataforma de datos abiertos de la República del Ecuador</a> son pasos cruciales para abordar el tema de las personas desaparecidas en Ecuador."
+    },
+    {
+      "type": "text",
+      "value": "Y que nos dicen los datos históricos ..."
+    },
+    {
+      "type": "bar-chart",
+      "title": "Casos reportados de personas desaparecidas",
+      "value": {
+        "steps": [
+          "En el periodo acumulado <b>2017-2025 </b>, los casos reportados de personas desaparecidas fueron de <b> 68,516 </b>.",
+          "Los casos reportados han disminuido. Comparando 2024 vs 2017 hubo una disminución del <span style=background-color:#EB0F51CC> 34% </span>."
+        ]
+      }
+    },
+    {
+      "type": "bar-chart",
+      "title": "Casos de personas que aún están desaparecidas",
+      "value": {
+        "steps": [
+          "Los casos de personas que aún permanecen desaparecidas han ido en aumento. En el mismo período permanecen desaparecidas <span style=background-color:#EB0F51CC> 2181</span> personas."
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Veamos datos del 2024 con los <span style=background-color:#EB0F51f5> 6,952</span> casos reportados ..."
+    },
+    {
+      "type": "donut-chart",
+      "title": "Sexo de las personas reportadas como desaparecidas",
+      "value": {
+        "steps": [
+          "Más del <b>56%</b> de las desapariciones reportadas en el 2024 son <span style=background-color:#F88B9D80>mujeres</span>."
+        ]
+      }
+    },
+    {
+      "type": "bar-chart",
+      "title": "Edad de las personas reportadas como desaparecidas",
+      "value": {
+        "steps": [
+          "El <b>44%</b> de las desapariciones corresponden a edades entre <span style=background-color:#bf5b17> 13 y 17 </span> años."
+        ]
+      }
+    },
+    {
+      "type": "bar-chart",
+      "title": "Causas de la desaparición de personas",
+      "value": {
+        "steps": [
+          "De las 6952 personas reportadas, <span style=background-color:#12B607cc>6240</span> fueron halladas y <b> 712 </b> personas aún permanecen <span style=background-color:#EB0F51CC> Desaparecidas </span>. ",
+          "El <b> 50% </b> de las personas halladas son por <b>Causas Personales </b>.",
+          "<b> 238 </b> personas posiblemente estén vinculados a delitos como trata de personas y tráfico de inmigrantes."
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "Los datos a nivel geográfico podrían ayudarnos a identificar las zonas con mayores desapariciones ..."
+    },
+    {
+      "type": "choropleth-map",
+      "title": "Cantones con mayor desaparición de personas",
+      "value": {
+        "steps": [
+          "Las áreas más <b>oscuras </b> tienen más desapariciones. <em>Posiciónese</em> sobre el área para ver los datos.",
+          "Los cantones con mayores desapariciones son <b>Quito</b> y <b>Guayaquil</b>."
+        ]
+      }
+    },
+    {
+      "type": "choropleth-map",
+      "title": "Desaparición de personas según su densidad poblacional",
+      "value": {
+        "steps": [
+          "... pero considerando el tamaño de la población, <b>Centinela del Cóndor</b> y <b>El Pangui</b> tienen más desapariciones con 14 y 12 personas cada 10,000 habitantes. El doble comparado con Quito.",
+          "Este ratio es importante para <em>dimensionar</em> los recursos y combatir este problema social por zonas."
+        ]
+      }
+    },
+    {
+      "type": "text",
+      "value": "El presente análisis nos lleva a la conclusión que el perfil de las personas que más desaparecen son <span style=background-color:#EB0F51f5;color:white>mujeres adolescentes con problemas personales</span>; ocurridos de forma circunstancial o debido a una relación afectiva"
+    },
+    {
+      "type": "text",
+      "value": "Finalmente recolectar datos como la <b> raza</b> nos ayudarán a comprender mejor el perfil de las personas desaparecidas."
+    }
+  ]
+}
