@@ -6,7 +6,7 @@ import data from '$lib/data/synthetic.csv';
 const rawData = data.map((d) => ({
   // generate a geojson file with points
   ...d,
-  incident_id: + d.incident_id,
+  customer_id: + d.incident_id,
   longitud: + d.longitud,
   latitud: + d.latitud,
   año: + d.año,
@@ -30,7 +30,14 @@ export const geoData = () => {
 
 export const hexagons = () => {
   // Miraflores boundary
-	const boundary = feature(pe, pe.objects.level4).features.filter((d) => d.id == '150122');
+	let boundary = feature(pe, pe.objects.level4).features.filter((d) => d.id == '150122');
 
-  return boundary[0];
+  boundary.map((d) => {
+    d.properties = {
+      areacd: d.properties.id,
+      areanm: d.properties.name,
+    }
+  })
+
+  return boundary;
 };
